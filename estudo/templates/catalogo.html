@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo</title>
+    <link rel="stylesheet" href="{% static 'css/css.css' %}">
+</head>
+<body>
+    <h2>NA MALDADE</h2>
+    <hr>
+    <h3>É a voz que me desmancha por inteiro
+    <br>A ponta do teu olho fica
+    <br>Tão bonita
+    <br>Muito linda quando tu sorri
+    <br>
+    <br>Não caí na tua conversa não
+    <br>Diz que não sente nada
+    <br>E na maior cara lavada
+    <br>Vem me dar teu coração
+    <br>O teu coração
+    <br>
+    <br>Quero conquistar teu peito
+    <br>Te ouvir cantar todas as noites
+    <br>Até a gente dormir
+    <br>Quero te amar por inteiro
+    <br>E entender como funciona
+    <br>Toda essa tua forma de ser, sem mim</h3>
+    <br><br>
+    <form action="" method="post">
+        {% csrf_token %}
+        <h4>FEEDBACK</h4>
+        <p>Nome: <input type="text" name="usuario" id="usuario"> (Opcional)</p>
+        <p>Feedback: <input type="text" name="mensagem" id="mensagem"></p>
+        <button type="submit">enviar</button>
+        
+    </form>
+</body>
+</html>

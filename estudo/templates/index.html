@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo</title>
+    <link rel="stylesheet" href="{% static 'css/css.css' %}">
+</head>
+<body>
+    <h2>NA MALDADE 2.0</h2>
+    <hr>
+    <h3>Se eu pudesse ser assim
+    <br>Só metade do que pensa de mim
+    <br>Qualquer coisa eu poderia fazer
+    <br>Ate aprender amar
+    <br>
+    <br>Quando te vejo agir
+    <br>Como se não fosse me deixar ir
+    <br>Qualquer coisa eu poderia fazer
+    <br>Ate aprender amar, como você
+    <br>
+    <br>Sempre pensei que era ruim
+    <br>Mas é certo, eu já sei que
+    <br>Você é tão bom
+    <br>Que eu não chego aos teus pés
+    <br>
+    <br>Olhe pra si
+    <br>Como eu te adoro
+    <br>Queria saber
+    <br>Oque você ver em mim?</h3>
+    <br><br>
+   <form action="" method="post">
+        {% csrf_token %}
+        <h4>FEEDBACK</h4>
+        <p>Nome: <input type="text" name="usuario" id="usuario"> (Opcional)</p>
+        <p>Feedback: <input type="text" name="mensagem" id="mensagem"></p>
+        <button type="submit">enviar</button>
+    
+</body>
+</html>
