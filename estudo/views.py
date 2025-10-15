@@ -11,7 +11,6 @@ def ver_produtos(request):
         mensagem = request.POST.get('mensagem')
         form = User(nome=nome, mensagem=mensagem)
         form.save()
-        return HttpResponse('Fui chamado!')
     return render(request, 'index.html')
 
 def catalogo(request):
