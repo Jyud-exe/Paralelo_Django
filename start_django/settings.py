@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-ik==m)!6uo%#_4qkvq156yiqk6u13k+n7+bwpn1%a57$to=fl&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['paralelo-django.onrender.com']
 
 
 # Application definition
